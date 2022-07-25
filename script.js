@@ -39,5 +39,5 @@ function getInfo() {
 }
 
 function loggedIn(user){
-    window.location = '/index2.html';
+    window.location = './index2.html';
 }
