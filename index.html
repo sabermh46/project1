@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <form class="form">
+        <div>
+            <label for="userName"></label>
+            <input type="text" name="userName" id="userName" placeholder="Uername">
+        </div>
+        <div>
+            <label for="passWord"></label>
+            <input type="password" id="passWord" placeholder="Your Password">
+        </div>
+        <div class="center">
+            <button class="btn" type="button" onclick="getInfo();">Submit</button>
+        </div>
+    </form>
+
+    <style>
+        input{
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .center {
+            display: grid;
+            place-items: center;
+            
+        }
+    </style>
+
+    <script src="./script.js"></script>
+</body>
+</html>

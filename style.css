@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Josefin+Sans&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+.q-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.q-card {
+    background: rgba(203, 200, 246, 0.507);
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 700px;
+    overflow: hidden;
+}
+.q-card .head {
+    padding: 20px 30px;
+    font-size: 18px;
+    background: rgba(156, 121, 230, 0.453);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.254);
+}
+.q-card .body {
+    padding: 30px 40px;
+}
+.body ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+.body ul li .option {
+    background: rgba(255, 255, 255, 0.249);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.body ul li .option:hover {
+    background: rgba(211, 246, 128, 0.249);
+}
+.q-card .footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    background: rgb(183, 183, 183);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.143);
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+
+  div#question {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  
+  
